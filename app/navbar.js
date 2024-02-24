@@ -1,15 +1,17 @@
-import { SearchIcon, ArrowDownIcon,MenuAlt1Icon } from '@heroicons/react/solid';
 import React from 'react';
 
+import { Search,Menu,ArrowDownwardOutlined } from '@mui/icons-material';
 const Navbar = () => {
   return (
     <nav className="bg-white border-b border-gray-200 text-gray-800 py-4 px-8 flex justify-between items-center sticky top-0 z-10">
-      <div className="flex items-center">
-        <h1 className="text-green-300 font-bold text-xl">Testvalley </h1><MenuAlt1Icon className='h-6 w-6 text-green-300'/><span className='text-green-300 font-bold text-sl'>카테고리</span>
+      <div className="flex justify-center items-center">
+        <h1 className="text-green-300 font-bold text-xl">Testvalley </h1>
+        <Menu className='h-6 w-6 text-green-300' />
+        <span className='text-green-300 font-bold text-sl'>카테고리</span>
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="flex justify-center items-center space-x-4"> 
         <div className="relative">  
-            <SearchIcon className="absolute left-1 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
+          <Search className="absolute left-1 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-400" />
           <input
             type="text"
             placeholder=" 구매할지 망설이고 있다면, 검색해보세요!"
@@ -17,7 +19,7 @@ const Navbar = () => {
           />
         </div>
         <div className="flex items-center space-x-2 text-sm">
-          <ArrowDownIcon className="h-6 w-6 text-gray-400" />
+          <ArrowDownwardOutlined className="h-6 w-6 text-gray-400" />
           <p className='text-grey-300'>| 로그인 / 회원가입</p>
         </div>
       </div>

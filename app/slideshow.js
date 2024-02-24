@@ -4,7 +4,6 @@ import axios from 'axios';
 import Carousel from 'react-elastic-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from './slideshow.css'; 
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid';
 
 const Slideshow = () => {
   const [carouselData, setCarouselData] = useState([]);
