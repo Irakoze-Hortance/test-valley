@@ -1,0 +1,57 @@
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin-top: 20px;
+    padding:15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: fit-content;
+}
+
+.left-section {
+    float: left;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.right-section {
+    float: right;
+    width: 80%;
+    margin-right: 120px;
+}
+
+.discount-rate {
+    color: orange;
+    font-weight: 600;
+}
+
+.subitems {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    font-size: 12px;
+}
+
+.subitem {
+    margin: 5px;
+}
+
+
+
+.image-container {
+    position: relative;
+    max-width: 40%;
+    max-height: 40%;
+    width: auto;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.tags {
+    bottom: 0;
+    left: 3px;
+    background-color: rgb(8, 214, 108); 
+    color: white; 
+    border-radius: 5px;
+}
